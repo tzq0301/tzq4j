@@ -1,11 +1,10 @@
 package tzq0301.util;
 
 import org.junit.jupiter.api.Test;
+import tzq0301.collection.util.MapUtils;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class MapUtilsTest {
 
