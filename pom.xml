@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.tzq0301</groupId>
+    <groupId>cn.cn.tzq0301</groupId>
     <artifactId>tzq4j</artifactId>
     <version>1.0.0</version>
 
@@ -80,8 +80,8 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub tzq0301 Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/tzq0301/tzq4j</url>
+            <name>GitHub cn.tzq0301 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/cn.tzq0301/tzq4j</url>
         </repository>
     </distributionManagement>
 

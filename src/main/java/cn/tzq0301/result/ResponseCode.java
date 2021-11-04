@@ -1,4 +1,4 @@
-package tzq0301.result;
+package cn.tzq0301.result;
 
 public enum ResponseCode {
     SUCCESS(1, "Success"),
