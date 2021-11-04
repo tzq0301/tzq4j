@@ -1,6 +1,6 @@
 # tzq4j
 
-[![](https://jitpack.io/v/tzq0301/tzq4j.svg)](https://jitpack.io/#tzq0301/tzq4j)
+[![](https://jitpack.io/v/cn.tzq0301/tzq4j.svg)](https://jitpack.io/#cn.tzq0301/tzq4j)
 
 ## Introduction
 

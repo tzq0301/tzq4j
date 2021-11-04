@@ -1,14 +1,22 @@
-package tzq0301.collection.entity;
+package cn.tzq0301.collection.entity;
+
+import cn.tzq0301.collection.util.MapUtils;
+import com.google.common.collect.Maps;
+import org.checkerframework.checker.nullness.qual.Nullable;
 
 import java.util.*;
 
 /**
  * @author TZQ
  */
-public class HuffmanTree {
+public final class HuffmanTree {
     private final HuffmanNode root;
     private final Map<Character, Integer> characterCountMap;
     private final Map<Character, String> huffmanEncoding;
+
+    public HuffmanTree(List<Character> keys, List<Integer> values) {
+        this(MapUtils.newImmutableHashMap(keys, values));
+    }
 
     public HuffmanTree(Map<Character, Integer> characterCountMap) {
         this.characterCountMap = characterCountMap;

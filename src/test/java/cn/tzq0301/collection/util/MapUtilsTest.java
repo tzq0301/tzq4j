@@ -1,7 +1,6 @@
-package tzq0301.util;
+package cn.tzq0301.collection.util;
 
 import org.junit.jupiter.api.Test;
-import tzq0301.collection.util.MapUtils;
 
 import java.util.HashMap;
 import java.util.Map;
