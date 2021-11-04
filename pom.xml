@@ -81,7 +81,7 @@
         <repository>
             <id>github</id>
             <name>GitHub cn.tzq0301 Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/cn.tzq0301/tzq4j</url>
+            <url>https://maven.pkg.github.com/tzq0301/tzq4j</url>
         </repository>
     </distributionManagement>
 
