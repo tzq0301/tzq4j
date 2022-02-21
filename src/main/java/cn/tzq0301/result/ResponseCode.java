@@ -1,5 +1,6 @@
 package cn.tzq0301.result;
 
+@Deprecated
 public enum ResponseCode {
     SUCCESS(1, "Success"),
     ERROR(2, "Error"),
