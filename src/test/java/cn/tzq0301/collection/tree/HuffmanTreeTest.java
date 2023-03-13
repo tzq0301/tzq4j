@@ -1,4 +1,4 @@
-package cn.tzq0301.collection.entity;
+package cn.tzq0301.collection.tree;
 
 import cn.tzq0301.collection.util.StringUtils;
 import com.google.common.collect.Lists;

@@ -1,8 +1,6 @@
 package cn.tzq0301.collection.util;
 
-import com.google.common.base.Strings;
 import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.Maps;
 
 import java.util.HashMap;
 import java.util.List;
@@ -32,21 +30,6 @@ public final class MapUtils {
 
     public static <K, V> Map<K, V> newImmutableHashMap(List<K> keys, List<V> values) {
         return ImmutableMap.copyOf(newHashMap(keys, values));
-    }
-
-    public static <K, V> void printMap(Map<K, V> map) {
-        printMap(map, "");
-    }
-
-    public static <K, V> void printMap(Map<K, V> map, String nameOfMap) {
-        if (Strings.isNullOrEmpty(nameOfMap)) {
-            nameOfMap = "Map";
-        }
-        StringBuilder info = new StringBuilder().append("\n").append(nameOfMap).append(": \n");
-        map.forEach((k, v) -> info.append("\t").append(k).append(" -> ").append(v).append("\n"));
-        info.append("\n");
-
-        System.out.println(info);
     }
 
     private MapUtils() {}
