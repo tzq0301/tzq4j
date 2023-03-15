@@ -6,7 +6,7 @@
 
     <groupId>cn.tzq0301</groupId>
     <artifactId>tzq4j</artifactId>
-    <version>1.0.8</version>
+    <version>1.0.9</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>A tool lib for java.</description>
@@ -40,6 +40,7 @@
         <lombok.version>1.18.22</lombok.version>
         <guava.version>31.0.1-jre</guava.version>
         <junit.version>5.9.1</junit.version>
+        <spring.version>6.0.6</spring.version>
     </properties>
 
     <dependencies>
@@ -47,12 +48,25 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-websocket</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-messaging</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
         <dependency>

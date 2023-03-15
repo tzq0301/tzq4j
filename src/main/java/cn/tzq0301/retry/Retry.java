@@ -23,10 +23,12 @@ public final class Retry {
     public static void of(Function<Integer, Boolean> task, int times, Duration interval, boolean useExponentialBackoff, boolean useJitter) {
         int epoch = 1;
         while (times > 0) {
-            boolean result = task.apply(epoch);
-            if (result) {
-                return;
-            }
+            try {
+                boolean result = task.apply(epoch);
+                if (result) {
+                    return;
+                }
+            } catch (Throwable ignored) {}
             long sleepDuration = interval.toMillis();
             if (useExponentialBackoff) {
                 sleepDuration *= (long) Math.pow(2, epoch - 1);
